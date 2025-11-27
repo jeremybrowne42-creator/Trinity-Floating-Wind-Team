@@ -9,17 +9,17 @@ import galleryData from "@/data/gallery.json";
 
 export default function Home() {
   // Get top 8 sponsors for homepage
-  const topSponsors = sponsorsData.companies.slice(0, 8);
+  const topSponsors = sponsorsData?.companies?.slice(0, 8) || [];
   
   // Flatten gallery images for homepage teaser (latest 6)
   const galleryImages = galleryData
-    .flatMap((item) =>
-      item.images.map((img) => ({
+    ?.flatMap((item) =>
+      item.images?.map((img) => ({
         src: img,
-        alt: `${item.title} - ${item.caption}`,
-      }))
+        alt: `${item.title} - ${item.caption || ""}`,
+      })) || []
     )
-    .slice(-6);
+    .slice(-6) || [];
 
   return (
     <>
