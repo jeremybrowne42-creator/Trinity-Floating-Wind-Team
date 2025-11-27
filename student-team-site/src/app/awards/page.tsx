@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import Section from "@/components/section";
+import { AwardLogo } from "@/components/award-logo";
 import awardsData from "@/data/awards.json";
 
 export const metadata = {
@@ -27,13 +27,7 @@ export default function Awards() {
               className="flex flex-col md:flex-row gap-6 rounded-lg border p-6"
             >
               <div className="flex-shrink-0">
-                <Image
-                  src={award.logo}
-                  alt={award.org}
-                  width={120}
-                  height={120}
-                  className="h-20 w-auto object-contain"
-                />
+                <AwardLogo src={award.logo} alt={award.org} />
               </div>
               <div className="flex-1">
                 <div className="text-sm text-muted-foreground mb-2">

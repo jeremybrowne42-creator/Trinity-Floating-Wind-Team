@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import Link from "next/link";
 import Section from "@/components/section";
+import { ProjectImage } from "@/components/project-image";
 import projectsData from "@/data/projects.json";
 
 export async function generateStaticParams() {
@@ -40,7 +40,7 @@ export default function ProjectPage({
 
           {project.hero && (
             <div className="mb-8">
-              <Image
+              <ProjectImage
                 src={project.hero}
                 alt={project.title}
                 width={1200}
@@ -62,7 +62,7 @@ export default function ProjectPage({
               <h2 className="text-2xl font-semibold mb-4">Images</h2>
               <div className="grid gap-4 md:grid-cols-2">
                 {project.images.map((img, i) => (
-                  <Image
+                  <ProjectImage
                     key={i}
                     src={img}
                     alt={`${project.title} - Image ${i + 1}`}
