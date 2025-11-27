@@ -1,0 +1,17 @@
+{
+  "tiers": [
+    { "name": "Platinum", "min": 10000 },
+    { "name": "Gold", "min": 5000 },
+    { "name": "Silver", "min": 2500 },
+    { "name": "Bronze", "min": 1000 }
+  ],
+  "companies": [
+    {
+      "name": "ACME Composites",
+      "tier": "Gold",
+      "logo": "/logos/acme.svg",
+      "url": "https://example.com"
+    }
+  ]
+}
+

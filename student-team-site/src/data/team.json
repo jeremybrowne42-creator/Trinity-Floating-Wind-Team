@@ -1,0 +1,25 @@
+{
+  "leads": [
+    {
+      "name": "Jane Doe",
+      "role": "Team Lead",
+      "photo": "/team/jane.jpg",
+      "linkedin": "https://linkedin.com/in/jane",
+      "bio": "Structures & composites."
+    }
+  ],
+  "members": [
+    { "name": "Alex Lee", "role": "Powertrain", "photo": "/team/alex.jpg" }
+  ],
+  "advisors": [
+    { "name": "Dr. Smith", "role": "Faculty Advisor", "photo": "/team/smith.jpg" }
+  ],
+  "alumni": [
+    {
+      "name": "Sam Patel",
+      "role": "Founding Member",
+      "photo": "/team/sam.jpg"
+    }
+  ]
+}
+

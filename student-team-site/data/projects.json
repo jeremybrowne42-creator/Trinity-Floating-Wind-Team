@@ -1,0 +1,13 @@
+[
+  {
+    "slug": "floating-offshore-concept",
+    "title": "Floating Offshore Concept",
+    "summary": "Concept study and scale model testing.",
+    "year": 2025,
+    "hero": "/projects/fowt/hero.jpg",
+    "images": ["/projects/fowt/1.jpg", "/projects/fowt/2.jpg"],
+    "content": "MDX allowed content here or short HTML string.",
+    "tags": ["offshore", "hydrodynamics"]
+  }
+]
+
